@@ -12,7 +12,7 @@ This repository contains my submission for the Rails test assigned on May 16. Wh
 1. Clone this repository to your local machine:
 
    ```
-   git clone <repository-url>
+   git clone <git@github.com:GithubDjk/backend_test_app.git>
    ```
 
 2. Install dependencies:
