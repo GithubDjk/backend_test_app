@@ -27,6 +27,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Devise gem to authenticate the user
 gem 'devise'
+gem 'devise-jwt'
+gem 'active_model_serializers'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
