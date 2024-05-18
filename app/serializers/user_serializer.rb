@@ -1,6 +1,6 @@
 # app/serializers/user_serializer.rb
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :token, :email, :name, :country, :created_at, :updated_at
+  attributes :data
 
   def initialize(object, options = {})
     @token = options[:token]

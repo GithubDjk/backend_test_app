@@ -8,7 +8,7 @@ module Api
         user = User.find_by(email: session_params[:email])
         if user && user.valid_password?(session_params[:password])
           token = Warden::JWTAuth::UserEncoder.new.call(user, :user, nil).first
-          render json: { data: UserSerializer.new(user, token: token)}, status: :ok
+          render json: {data: UserSerializer.new(user, token: token).data}, status: :ok
         else
           render json: { error: 'Invalid email or password' }, status: :unauthorized
         end
